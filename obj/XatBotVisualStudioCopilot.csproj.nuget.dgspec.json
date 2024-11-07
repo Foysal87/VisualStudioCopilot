@@ -1,0 +1,74 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\workstation\\Job\\orbitax-openai-job\\XatBotVisualStudioCopilot\\XatBotVisualStudioCopilot.csproj": {}
+  },
+  "projects": {
+    "C:\\workstation\\Job\\orbitax-openai-job\\XatBotVisualStudioCopilot\\XatBotVisualStudioCopilot.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\workstation\\Job\\orbitax-openai-job\\XatBotVisualStudioCopilot\\XatBotVisualStudioCopilot.csproj",
+        "projectName": "XatBotVisualStudioCopilot",
+        "projectPath": "C:\\workstation\\Job\\orbitax-openai-job\\XatBotVisualStudioCopilot\\XatBotVisualStudioCopilot.csproj",
+        "packagesPath": "C:\\Users\\foysal.ahmed\\.nuget\\packages\\",
+        "outputPath": "C:\\workstation\\Job\\orbitax-openai-job\\XatBotVisualStudioCopilot\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\foysal.ahmed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://ngt.orbitax.com/nuget": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Azure.AI.OpenAI": {
+              "target": "Package",
+              "version": "[2.0.0-beta.6, )"
+            },
+            "Microsoft.VSSDK.BuildTools": {
+              "target": "Package",
+              "version": "[17.8.2365, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[17.0.32112.339, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-arm64": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}
