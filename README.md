@@ -1,1 +1,1 @@
-# VisualStudioCopilot
+# XatBotVisualStudioCopilot
