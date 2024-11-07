@@ -45,6 +45,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Command\BaseAction.cs" />
     <Compile Include="Command\XatBotCommand.cs" />
     <Compile Include="Models\AiRequest.cs" />
     <Compile Include="Models\ApplicationSettings.cs" />
@@ -87,7 +88,9 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <IncludeInVSIX>true</IncludeInVSIX>
     </Content>
-    <Content Include="Command\Resources\XatBotCompleteCommand.png" />
+    <Content Include="Command\Resources\complete.png" />
+    <Content Include="Command\Resources\addTests.png" />
+    <Content Include="Command\Resources\XatBotCommand.png" />
     <VSCTCompile Include="Command\XatBotVisualStudioCopilotPackage.vsct">
       <ResourceName>Menus.ctmenu</ResourceName>
     </VSCTCompile>

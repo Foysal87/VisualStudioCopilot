@@ -27,13 +27,13 @@ namespace XatBotVisualStudioCopilot.Command
         /// Command ID.
         /// </summary>
         public const int CommandId = 0x0100;
-        public const int CompleteId = 0x0200;
-        public const int FindBugsId = 0x0300;
-        public const int ExplainId = 0x0400;
-        public const int OptimizeId = 0x0500;
-        public const int RefactorId = 0x0600;
-        public const int AddCommentId = 0x0700;
-        public const int AddSummaryId = 0x0800;
+        public const int CompleteId = 0x0101;
+        public const int FindBugsId = 0x0102;
+        public const int ExplainId = 0x0103;
+        public const int OptimizeId = 0x0104;
+        public const int RefactorId = 0x0105;
+        public const int AddCommentId = 0x0106;
+        public const int AddSummaryId = 0x0107;
 
         /// <summary>
         /// Command menu group (command set GUID).
@@ -56,8 +56,14 @@ namespace XatBotVisualStudioCopilot.Command
             this.package = package ?? throw new ArgumentNullException(nameof(package));
             commandService = commandService ?? throw new ArgumentNullException(nameof(commandService));
 
-            var menuCommandID = new CommandID(CommandSet, CommandId);
-            var menuItem = new MenuCommand(async (s, e) => await ExecuteAsync(s, e), menuCommandID);
+            AddCompleteAction(commandService);
+        }
+
+        private void AddCompleteAction(OleMenuCommandService commandService)
+        {
+            var menuCommandID = new CommandID(CommandSet, CompleteId);
+            var completeAction = new CompleteAction();
+            var menuItem = new MenuCommand(async (s, e) => await completeAction.ExecuteAsync(this.package, s, e), menuCommandID);
             commandService.AddCommand(menuItem);
         }
 
@@ -106,7 +112,7 @@ namespace XatBotVisualStudioCopilot.Command
         {
             try
             {
-                DTE2 dte = (DTE2) Package.GetGlobalService(typeof(DTE));
+                DTE2 dte = (DTE2)Package.GetGlobalService(typeof(DTE));
                 if (dte == null)
                 {
                     return;
@@ -115,11 +121,11 @@ namespace XatBotVisualStudioCopilot.Command
                 // Get the selected file in Solution Explorer
                 string selectedFilePath = null;
                 UIHierarchy solutionExplorer = dte.ToolWindows.SolutionExplorer;
-                Array selectedItems = (Array) solutionExplorer.SelectedItems;
+                Array selectedItems = (Array)solutionExplorer.SelectedItems;
 
                 if (selectedItems != null && selectedItems.Length > 0)
                 {
-                    UIHierarchyItem hierarchyItem = (UIHierarchyItem) selectedItems.GetValue(0);
+                    UIHierarchyItem hierarchyItem = (UIHierarchyItem)selectedItems.GetValue(0);
                     ProjectItem projectItem = hierarchyItem.Object as ProjectItem;
 
                     if (projectItem != null)
@@ -138,7 +144,7 @@ namespace XatBotVisualStudioCopilot.Command
                 TextSelection selection = null;
                 if (activeDocument != null)
                 {
-                    selection = (TextSelection) activeDocument.Selection;
+                    selection = (TextSelection)activeDocument.Selection;
                     selectedText = selection.Text;
                     // Get the cursor line and column position
                     cursorLine = selection.CurrentLine;
@@ -160,7 +166,7 @@ namespace XatBotVisualStudioCopilot.Command
                 var response = await XatBotAIService.Instance.ChatAsync(chatMessages);
                 var (replacedSelectedText, generatedCode) = GetTextAndCode(response.Text);
 
-                
+
 
                 generatedCode = selectedFileContent.Replace(replacedSelectedText, generatedCode);
 
@@ -186,7 +192,7 @@ namespace XatBotVisualStudioCopilot.Command
             //ThreadHelper.ThrowIfNotOnUIThread();
 
             // Get the DTE service (Development Tools Environment)
-           
+
         }
 
         private List<ChatMessage> GetChatMessages(string selectedFileContent, string textAboveCursor, string selectedText)
@@ -229,7 +235,7 @@ namespace XatBotVisualStudioCopilot.Command
         {
             try
             {
-                var obj = JsonConvert.DeserializeObject<Dictionary<string,string> >(jsonString);
+                var obj = JsonConvert.DeserializeObject<Dictionary<string, string>>(jsonString);
                 return (obj["SelectedText"], obj["GeneratedCode"]);
             }
             catch (Exception ex)

@@ -35,52 +35,84 @@
          other menus or buttons (commands); from a visual point of view you can see the
          group as the part of a menu contained between two lines. The parent of a group
          must be a menu. -->
-    <Groups>
-      <Group guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyMenuGroup" priority="0x0050">
-        <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
-      </Group>
-    </Groups>
 
-    <!--Buttons section. -->
-    <!--This section defines the elements the user can interact with, like a menu command or a button
-        or combo box in a toolbar. -->
-    <Buttons>
-      <!--To define a menu group you have to specify its ID, the parent menu and its display priority.
-          The command is visible and enabled by default. If you need to change the visibility, status, etc, you can use
-          the CommandFlag node.
-          You can add more than one CommandFlag node e.g.:
-              <CommandFlag>DefaultInvisible</CommandFlag>
-              <CommandFlag>DynamicVisibility</CommandFlag>
-          If you do not want an image next to your command, remove the Icon node /> -->
-      <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="XatBotCompleteCommandId" priority="0x0100" type="Button">
-        <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyMenuGroup" />
-        <Icon guid="guidImages" id="bmpPic1" />
-        <Strings>
-          <ButtonText>XatBot Complete</ButtonText>
-        </Strings>
-      </Button>
-    </Buttons>
+	  <Groups>
+		  <Group guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForSubMenu" priority="0x1000" />
+		  <Group guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands" priority="0x1001" />
+	  </Groups>
 
-    <!--The bitmaps section is used to define the bitmaps that are used for the commands.-->
-    <Bitmaps>
-      <!--  The bitmap id is defined in a way that is a little bit different from the others:
-            the declaration starts with a guid for the bitmap strip, then there is the resource id of the
-            bitmap strip containing the bitmaps and then there are the numeric ids of the elements used
-            inside a button definition. An important aspect of this declaration is that the element id
-            must be the actual index (1-based) of the bitmap inside the bitmap strip. -->
-      <Bitmap guid="guidImages" href="Resources\XatBotCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
-    </Bitmaps>
+	  <!-- Define the menu -->
+	  <Menus>
+		  <Menu guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MySubMenu" priority="0x0100" type="Menu">
+			  <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_TOOLS" />
+			  <Strings>
+				  <ButtonText>Ask XatBot</ButtonText>
+			  </Strings>
+		  </Menu>
+	  </Menus>
+
+	  <!-- Define buttons (commands) -->
+	  <Buttons>
+		  <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="Complete" priority="0x0000" type="Button">
+			  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands"/>
+			  <Icon guid="guidImages" id="bmpPic1" />
+			  <Strings>
+				  <ButtonText>Complete</ButtonText>
+			  </Strings>
+		  </Button>
+
+		  <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="AddTests" priority="0x0100" type="Button">
+			  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands"/>
+			  <Icon guid="guidImages" id="bmpPic2" />
+			  <Strings>
+				  <ButtonText>Add Tests</ButtonText>
+			  </Strings>
+		  </Button>
+
+		  <!-- Add additional buttons as needed -->
+	  </Buttons>
+
+	  <!-- Define the icons used for the buttons -->
+	  <Bitmaps>
+		  <Bitmap guid="guidImages" href="Resources\XatBotCommand.png" usedList="bmpPic1, bmpPic2, bmpPicSearch, bmpPicX, bmpPicArrows, bmpPicStrikethrough"/>
+		  <!-- Add additional bitmap entries as needed -->
+	  </Bitmaps>
   </Commands>
 
-  <Symbols>
-    <!-- This is the package guid. -->
-    <GuidSymbol name="guidXatBotVisualStudioCopilotPackage" value="{5c0470b1-5f2c-4f85-ad48-ddbf40c64bc7}" />
+  <!-- Define key bindings for shortcuts -->
+  <KeyBindings>
+	  <KeyBinding guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="Complete" mod1="ALT" key1="1" editor="guidVSStd97" />
+	  <KeyBinding guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="AddTests" mod1="ALT" key1="2" editor="guidVSStd97" />
+	  <!-- Add more key bindings as needed -->
+  </KeyBindings>
 
-    <!-- This is the guid used to group the menu commands together -->
-    <GuidSymbol name="guidXatBotVisualStudioCopilotPackageCmdSet" value="{fbfec63b-b25f-492f-a605-d1b264cb82d7}">
-      <IDSymbol name="MyMenuGroup" value="0x1020" />
-      <IDSymbol name="XatBotCompleteCommandId" value="0x0100" />
-    </GuidSymbol>
+  <!-- Define command placements for organizing commands in menus -->
+  <CommandPlacements>
+	  <CommandPlacement guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForSubMenu" priority="0x0050">
+		  <Parent guid="guidSHLMainMenu" id="IDM_VS_CTXT_CODEWIN"/>
+	  </CommandPlacement>
+
+	  <CommandPlacement guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MySubMenu" priority="0x100">
+		  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForSubMenu"/>
+	  </CommandPlacement>
+
+	  <CommandPlacement guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands" priority="0x0100">
+		  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MySubMenu"/>
+	  </CommandPlacement>
+
+	  <!-- Add additional command placements as needed -->
+  </CommandPlacements>
+
+  <Symbols>
+	  <GuidSymbol name="guidXatBotVisualStudioCopilotPackage" value="{5c0470b1-5f2c-4f85-ad48-ddbf40c64bc7}" />
+	  <GuidSymbol name="guidXatBotVisualStudioCopilotPackageCmdSet" value="{fbfec63b-b25f-492f-a605-d1b264cb82d7}">
+		  <IDSymbol name="MyGroupForSubMenu" value="0x1000" />
+		  <IDSymbol name="MyGroupForCommands" value="0x1001" />
+		  <IDSymbol name="MySubMenu" value="0x2000" />
+		  <IDSymbol name="Complete" value="0x0101" />
+		  <IDSymbol name="AddTests" value="0x0102" />
+		  <!-- Add additional command IDs as needed -->
+	  </GuidSymbol>
 
     <GuidSymbol name="guidImages" value="{0110d77a-7745-44de-bc13-e37721826ddc}" >
       <IDSymbol name="bmpPic1" value="1" />
