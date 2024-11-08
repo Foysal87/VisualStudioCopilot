@@ -61,7 +61,55 @@
 			  </Strings>
 		  </Button>
 
-		  <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="AddTests" priority="0x0100" type="Button">
+		  <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="FindBugs" priority="0x0100" type="Button">
+			  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands"/>
+			  <Icon guid="guidImages" id="bmpPic1" />
+			  <Strings>
+				  <ButtonText>Find Bugs</ButtonText>
+			  </Strings>
+		  </Button>
+
+		  <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="Explain" priority="0x0200" type="Button">
+			  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands"/>
+			  <Icon guid="guidImages" id="bmpPic1" />
+			  <Strings>
+				  <ButtonText>Explain</ButtonText>
+			  </Strings>
+		  </Button>
+
+		  <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="Optimize" priority="0x0300" type="Button">
+			  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands"/>
+			  <Icon guid="guidImages" id="bmpPic1" />
+			  <Strings>
+				  <ButtonText>Optimize</ButtonText>
+			  </Strings>
+		  </Button>
+
+		  <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="Refactor" priority="0x0400" type="Button">
+			  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands"/>
+			  <Icon guid="guidImages" id="bmpPic1" />
+			  <Strings>
+				  <ButtonText>Refactor</ButtonText>
+			  </Strings>
+		  </Button>
+
+		  <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="AddComment" priority="0x0500" type="Button">
+			  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands"/>
+			  <Icon guid="guidImages" id="bmpPic1" />
+			  <Strings>
+				  <ButtonText>Add Comment</ButtonText>
+			  </Strings>
+		  </Button>
+
+		  <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="AddSummary" priority="0x0600" type="Button">
+			  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands"/>
+			  <Icon guid="guidImages" id="bmpPic1" />
+			  <Strings>
+				  <ButtonText>Add Summary</ButtonText>
+			  </Strings>
+		  </Button>
+
+		  <Button guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="AddTests" priority="0x0700" type="Button">
 			  <Parent guid="guidXatBotVisualStudioCopilotPackageCmdSet" id="MyGroupForCommands"/>
 			  <Icon guid="guidImages" id="bmpPic2" />
 			  <Strings>
@@ -110,7 +158,13 @@
 		  <IDSymbol name="MyGroupForCommands" value="0x1001" />
 		  <IDSymbol name="MySubMenu" value="0x2000" />
 		  <IDSymbol name="Complete" value="0x0101" />
-		  <IDSymbol name="AddTests" value="0x0102" />
+		  <IDSymbol name="FindBugs" value="0x0102" />
+		  <IDSymbol name="Explain" value="0x0103" />
+		  <IDSymbol name="Optimize" value="0x0104" />
+		  <IDSymbol name="Refactor" value="0x0105" />
+		  <IDSymbol name="AddComment" value="0x0106" />
+		  <IDSymbol name="AddSummary" value="0x0107" />
+		  <IDSymbol name="AddTests" value="0x0108" />
 		  <!-- Add additional command IDs as needed -->
 	  </GuidSymbol>
 

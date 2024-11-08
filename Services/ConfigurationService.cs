@@ -53,9 +53,10 @@ namespace XatBotVisualStudioCopilot.Services
             {
                 if (modelConfigs.TryGetValue(modelName, out var configs) && configs.Count > 0)
                 {
-                    return configs.First();
+                    return configs.FirstOrDefault();
                 }
             }
+
             return null;
         }
     }

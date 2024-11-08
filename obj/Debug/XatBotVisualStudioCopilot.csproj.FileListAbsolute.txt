@@ -36,3 +36,41 @@ C:\workstation\Job\orbitax-openai-job\XatBotVisualStudioCopilot\bin\Debug\System
 C:\workstation\Job\orbitax-openai-job\XatBotVisualStudioCopilot\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\workstation\Job\orbitax-openai-job\XatBotVisualStudioCopilot\bin\Debug\System.ValueTuple.dll
 C:\workstation\Job\orbitax-openai-job\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilot.csproj.CopyComplete
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\checked.png
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\XatBotVisualStudioCopilot.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\XatBotVisualStudioCopilot.pdb
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\XatBotVisualStudioCopilot.pkgdef
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\XatBotVisualStudioCopilot.vsix
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\extension.vsixmanifest
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\Azure.AI.OpenAI.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\Azure.Core.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\OpenAI.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.Buffers.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.ClientModel.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.Memory.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.Memory.Data.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.Text.Json.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\bin\Debug\System.ValueTuple.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilot.csproj.AssemblyReference.cache
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\_EmptyResource.resources
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilot.csproj.GenerateResource.cache
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilotPackage.cto
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\resources.json
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\ctoFiles.json
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\mergeCto.cache
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilot.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilot.csproj.CoreCompileInputs.cache
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilot.csproj.CopyComplete
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilot.dll
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilot.pdb
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilot.pkgdef
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\XatBotVisualStudioCopilot.latest.pkgdef
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\extension.vsixmanifest
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\files.json
+C:\Users\foysal.ahmed\Documents\Git projects\XatBotVisualStudioCopilot\obj\Debug\createTemplateManifests.cache

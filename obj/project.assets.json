@@ -14750,11 +14750,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\workstation\\Job\\orbitax-openai-job\\XatBotVisualStudioCopilot\\XatBotVisualStudioCopilot.csproj",
+      "projectUniqueName": "C:\\Users\\foysal.ahmed\\Documents\\Git projects\\XatBotVisualStudioCopilot\\XatBotVisualStudioCopilot.csproj",
       "projectName": "XatBotVisualStudioCopilot",
-      "projectPath": "C:\\workstation\\Job\\orbitax-openai-job\\XatBotVisualStudioCopilot\\XatBotVisualStudioCopilot.csproj",
+      "projectPath": "C:\\Users\\foysal.ahmed\\Documents\\Git projects\\XatBotVisualStudioCopilot\\XatBotVisualStudioCopilot.csproj",
       "packagesPath": "C:\\Users\\foysal.ahmed\\.nuget\\packages\\",
-      "outputPath": "C:\\workstation\\Job\\orbitax-openai-job\\XatBotVisualStudioCopilot\\obj\\",
+      "outputPath": "C:\\Users\\foysal.ahmed\\Documents\\Git projects\\XatBotVisualStudioCopilot\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

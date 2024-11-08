@@ -1,4 +1,5 @@
-﻿using OpenAI.Chat;
+﻿using DotNetCopilot.Models;
+using OpenAI.Chat;
 using System;
 using System.ClientModel;
 using System.Collections.Generic;
@@ -63,6 +64,15 @@ namespace XatBotVisualStudioCopilot.Services
                 throw new InvalidOperationException("AzureAiClient is not initialized.");
 
             return _azureAiClient.ChatStreamingAsync(messages, tokenSource);
+        }
+
+        public List<ChatMessage> GetChatMessages(string systemMessage, List<PromptContent> promptContents,
+            List<RawHistory> histories = null)
+        {
+            if (_azureAiClient == null)
+                throw new InvalidOperationException("AzureAiClient is not initialized.");
+
+            return _azureAiClient.GetChatMessages(systemMessage, promptContents, histories);
         }
 
     }

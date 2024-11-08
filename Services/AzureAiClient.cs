@@ -47,7 +47,7 @@ public class AzureAiClient
     {
         return new ChatCompletionOptions
         {
-            Temperature = config.Temperature ?? 0.7f,
+            Temperature = config.Temperature ?? 0.0f,
             MaxOutputTokenCount = config.MaxTokens ?? 3000,
             TopP = config.NucleusSamplingFactor ?? 1.0f,
             PresencePenalty = config.PresencePenalty ?? 0.0f,
@@ -67,7 +67,7 @@ public class AzureAiClient
         return _chatClient.CompleteChatStreamingAsync(chatMessages, _chatCompletionsOptions, tokenSource.Token);
     }
 
-    public List<ChatMessage> GetChatMessages(string systemMessage, List<PromptContent> promptContents, List<RawHistory> histories = null)
+    public  List<ChatMessage> GetChatMessages(string systemMessage, List<PromptContent> promptContents, List<RawHistory> histories = null)
     {
         var chatMessages = new List<ChatMessage>
             {

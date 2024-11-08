@@ -11,9 +11,9 @@ namespace XatBotVisualStudioCopilot.Services
     {
         private static readonly string _systemMessagesFolderPath = @"C:\LocalStore\XatBotVisualStudioCopilot\SystemMessages";
 
-        public static string GetSystemMessage(string fileName = "XatBotCompleteSystemMessage")
+        public static string GetSystemMessage(string type)
         {
-            var filePath = Path.Combine(_systemMessagesFolderPath, $"{fileName}.txt");
+            var filePath = Path.Combine(_systemMessagesFolderPath, $"{type}ActionSystemMessage.txt");
             if (!File.Exists(filePath))
                 throw new FileNotFoundException($"System message file not found: {filePath}");
 

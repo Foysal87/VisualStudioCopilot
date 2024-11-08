@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "X8F7X9ZcObXE0gHPRYT9HwMYdwRJcKUOACBMHiT9BAhTss3IxvTWn7VmkHpVh/PdFsm+K3fmD+6TVGkH6bW8TA==",
+  "dgSpecHash": "iI4UnQUA8UxT3zbfwgYbAwnewp/BU7TQi81EDKBMnuP+kN39g9lQJtwY8OwTEdiijOqfrtZeaAx0SLk/1UMZBQ==",
   "success": true,
-  "projectFilePath": "C:\\workstation\\Job\\orbitax-openai-job\\XatBotVisualStudioCopilot\\XatBotVisualStudioCopilot.csproj",
+  "projectFilePath": "C:\\Users\\foysal.ahmed\\Documents\\Git projects\\XatBotVisualStudioCopilot\\XatBotVisualStudioCopilot.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\foysal.ahmed\\.nuget\\packages\\azure.ai.openai\\2.0.0-beta.6\\azure.ai.openai.2.0.0-beta.6.nupkg.sha512",
     "C:\\Users\\foysal.ahmed\\.nuget\\packages\\azure.core\\1.43.0\\azure.core.1.43.0.nupkg.sha512",
